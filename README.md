@@ -12,12 +12,12 @@ Android Image Cropper
 ## Usage
 *For a working implementation, please have a look at the Sample Project*
 
-[See GitHub Wiki for more info.](https://github.com/ArthurHub/Android-Image-Cropper/wiki)
+[See GitHub Wiki for more info.](https://github.com/pcholt/Android-Image-Cropper/wiki)
 
 1. Include the library
 
  ```
- compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
+ compile 'com.github.pcholt:android-image-cropper:2.5.1bc'
  ```
 
 Add permissions to manifest
