@@ -26,18 +26,18 @@ android {
 // It should really be set up so that the version are all in line, and set to be a SNAPSHOT.
 // The version listed here is a temp hack to allow me to keep working.
 //android.libraryVariants
-//publishing {
-//    publications {
-//        maven(MavenPublication) {
-//
-//            groupId PUBLISH_GROUP_ID
-//            artifactId PUBLISH_ARTIFACT_ID
-//            version PUBLISH_VERSION + '-SNAPSHOT'
-//
-//            //artifact bundleRelease
-//        }
-//    }
-//}
+publishing {
+    publications {
+        maven(MavenPublication) {
+
+            groupId PUBLISH_GROUP_ID
+            artifactId PUBLISH_ARTIFACT_ID
+            version PUBLISH_VERSION + '-SNAPSHOT'
+
+            //artifact bundleRelease
+        }
+    }
+}
 
 //apply from: 'https://raw.githubusercontent.com/ArthurHub/release-android-library/master/android-release-aar.gradle'
 
