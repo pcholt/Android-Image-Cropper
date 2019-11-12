@@ -635,12 +635,16 @@ public class CropOverlayView extends View {
       }
       mPath.addOval(mDrawRect, Path.Direction.CW);
       canvas.save();
-      canvas.clipPath(mPath, Region.Op.INTERSECT);
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        canvas.clipOutPath(mPath);
+      } else {
+        canvas.clipPath(mPath, Region.Op.XOR);
+      }
       canvas.drawRect(left, top, right, bottom, mBackgroundPaint);
       canvas.restore();
     }
   }
-
+  
   /**
    * Draw 2 veritcal and 2 horizontal guidelines inside the cropping area to split it into 9 equal
    * parts.
