@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha05'
     }
 }
 
@@ -18,7 +19,7 @@ allprojects {
 
 ext {
     compileSdkVersion = 26
-    buildToolsVersion = '26.0.2'
+    buildToolsVersion = '28.0.2'
     supportLibraryVersion = '26.+'
 
     PUBLISH_GROUP_ID = 'com.theartofdev.edmodo'

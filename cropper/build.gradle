@@ -43,8 +43,6 @@ apply from: 'https://raw.githubusercontent.com/ArthurHub/release-android-library
 
 dependencies {
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile("com.android.support:exifinterface:$supportLibraryVersion") {
-        transitive = false
-    }
+    compile("com.android.support:exifinterface:$supportLibraryVersion")
 }
 
