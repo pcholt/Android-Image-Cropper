@@ -16,6 +16,6 @@ android {
 }
 
 dependencies {
-    compile project(':cropper')
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation project(':cropper')
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
 }
